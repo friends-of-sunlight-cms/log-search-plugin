@@ -1,0 +1,18 @@
+{
+    "$schema": "../../../system/schema/extend.json",
+    "name": "Log search",
+    "description": "Plugin enable log searched queries on website.",
+    "authors": [
+        {"name": "Lukáš Tesař", "url": "https://tlukas.eu"}
+    ],
+    "version": "1.0.0",
+    "environment": {
+        "system": "^8.0"
+    },
+    "langs": {
+        "log-search": "lang"
+    },
+    "events": [
+        {"event": "mod.search.after", "script": "event/log_search.php"}
+    ]
+}
